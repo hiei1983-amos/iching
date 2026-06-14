@@ -88,8 +88,6 @@
             --ink-soft: #4a4a4a;
             --gold: #9a7d32; 
             --gold-hover: #b4963c;
-            --error: #c0392b;
-            --success: #27ae60;
             --bg-overlay: rgba(254, 253, 250, 0.90); 
         }
         * { box-sizing:border-box; margin:0; padding:0; font-family:"Georgia", serif; }
@@ -164,7 +162,7 @@
             background: rgba(255, 255, 255, 0.93); padding:50px 30px; text-align:center; border-radius:12px;
             transition: all 0.4s cubic-bezier(0.165,0.84,0.44,1); border:1px solid rgba(180, 150, 60, 0.2);
             position:relative; box-shadow:0 10px 35px rgba(0,0,0,0.05); overflow:hidden;
-            display: flex; flex-direction: column; justify-content: space-between; cursor: pointer;
+            display: flex; flex-direction: column; justify-content: space-between;
         }
         .card:hover { transform: translateY(-8px); box-shadow:0 20px 45px rgba(154,125,50,0.15); border-color: var(--gold); }
         .symbol-wrapper { width:90px; height:90px; margin:0 auto 30px; transition: transform 0.8s; transform-style: preserve-3d; position: relative; }
@@ -188,7 +186,7 @@
         .action-btn { 
             display:inline-block; padding:12px 35px; border:1px solid var(--ink); text-decoration:none; color:var(--ink);
             font-size:0.75rem; letter-spacing:0.15em; transition:0.3s; background: transparent; 
-            width: 100%; font-weight: bold; text-align: center; line-height: 1; pointer-events: none;
+            width: 100%; font-weight: bold; text-align: center; line-height: 1; cursor: pointer;
         }
         .card:hover .action-btn { background: var(--ink); color: #fff; }
         
@@ -241,8 +239,8 @@
                 <div class="process-step">
                     <div class="step-number">01</div>
                     <div class="step-content">
-                        <div class="step-title">Provide Details on Ko-fi</div>
-                        <p>Click the card below to go to my secure Ko-fi page. There, you can input your email and describe the specific question you seek guidance on.</p>
+                        <div class="step-title">Select a Service</div>
+                        <p>Click the consultation option below to proceed to my secure Ko-fi page.</p>
                     </div>
                 </div>
                 <div class="process-step">
@@ -263,8 +261,7 @@
         </section>
 
         <section class="options" id="options">
-            <!-- 1. Chinese Almanac -->
-            <article class="card" onclick="window.open('https://ko-fi.com/amoswang/commissions?commissionAlias=0aab0c45fe&openCommissionsMenu=True', '_blank')">
+            <article class="card">
                 <div>
                     <div class="symbol-wrapper">
                         <div class="symbol-front"><div class="symbol-img" style="background-image:url('https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?w=150&auto=format&fit=crop&q=60');"></div></div>
@@ -283,12 +280,11 @@
                         <div>✓ Response within 48 hours</div>
                     </div>
                     <span class="price">USD $10</span>
-                    <button class="action-btn">Book Your Reading</button>
+                    <a href="https://ko-fi.com/amoswang/commissions?commissionAlias=0aab0c45fe&openCommissionsMenu=True" target="_blank" rel="noopener noreferrer" class="action-btn">Book Your Reading</a>
                 </div>
             </article>
 
-            <!-- 2. Eight Characters (Bazi) -->
-            <article class="card" onclick="window.open('https://ko-fi.com/amoswang/commissions?commissionAlias=fcff6e52c0&openCommissionsMenu=True', '_blank')">
+            <article class="card">
                 <div>
                     <div class="symbol-wrapper">
                         <div class="symbol-front"><div class="symbol-img" style="background-image:url('https://images.unsplash.com/photo-1601987177651-8edfe6c20009?w=150&auto=format&fit=crop&q=60');"></div></div>
@@ -307,12 +303,11 @@
                         <div>✓ Response within 48 hours</div>
                     </div>
                     <span class="price">USD $25</span>
-                    <button class="action-btn">Book Your Reading</button>
+                    <a href="https://ko-fi.com/amoswang/commissions?commissionAlias=fcff6e52c0&openCommissionsMenu=True" target="_blank" rel="noopener noreferrer" class="action-btn">Book Your Reading</a>
                 </div>
             </article>
 
-            <!-- 3. 64 Hexagrams -->
-            <article class="card" onclick="window.open('https://ko-fi.com/amoswang/commissions?commissionAlias=9bb31f422b&openCommissionsMenu=True', '_blank')">
+            <article class="card">
                 <div>
                     <div class="symbol-wrapper">
                         <div class="symbol-front">
@@ -335,9 +330,28 @@
                         <div>✓ Response within 48 hours</div>
                     </div>
                     <span class="price">USD $99</span>
-                    <button class="action-btn">Start Private Consultation</button>
+                    <a href="https://ko-fi.com/amoswang/commissions?commissionAlias=9bb31f422b&openCommissionsMenu=True" target="_blank" rel="noopener noreferrer" class="action-btn">Start Private Consultation</a>
                 </div>
             </article>
+        </section>
+
+        <section style="max-width: 800px; margin: 40px auto; padding: 40px 20px;">
+            <h2 class="section-title-h2" style="text-align: center;">Client Testimonials</h2>
+            <script src="https://giscus.app/client.js"
+                    data-repo="hiei1983-amos/iching"
+                    data-repo-id="R_kgDOS6QEcA"
+                    data-category="General"
+                    data-category-id="DIC_kwDOS6QEcM4C_JAC"
+                    data-mapping="pathname"
+                    data-strict="0"
+                    data-reactions-enabled="1"
+                    data-emit-metadata="0"
+                    data-input-position="bottom"
+                    data-theme="preferred_color_scheme"
+                    data-lang="en"
+                    crossorigin="anonymous"
+                    async>
+            </script>
         </section>
 
         <footer>
